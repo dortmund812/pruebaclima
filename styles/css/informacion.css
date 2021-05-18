@@ -1,0 +1,120 @@
+@font-face{
+	font-family: lemonmilk;
+	src: url(../../styles/fonts/LEMONMILK-Light.otf);
+}
+@font-face{
+	font-family: robotolight;
+	src: url(../../styles/fonts/Roboto-Light.ttf);
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #FFF;
+	width: 100%;
+}
+.container{
+	width: 100%;
+	position: relative;
+}
+.clima{
+	width: 100%;
+}
+.card__search{
+	width: 100%;
+	margin: 2.5rem 0;
+}
+.card__nav{
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	margin: 0 auto;
+	background: #FFF;
+	padding: .7rem 2rem;
+	box-shadow: 0 0 10px rgba(0,0,0,.3);
+	border-radius: 100px;
+}
+.card__nav .card__nav-link{
+	font-family: 'robotolight';
+	color: #34495E;
+	line-height: 2rem;
+	margin: 0px 5px;
+	padding: 0px .5rem;
+	text-decoration: none;
+}
+.card__nav .card__nav-link:hover,
+.card__nav .card__nav-link.active{
+	cursor: pointer;
+	text-decoration: underline;
+}
+.icon-resp{
+	display: none;
+}
+.informacion{
+	width: 80%;
+	margin: 0px auto;
+	padding: 1rem;
+	box-shadow: 0 0 10px rgba(0,0,0,.3);
+	border-radius: 5px;
+	font-family: robotolight;
+	margin-bottom: 3rem;
+}
+.informacion h2{
+	font-size: 2.3rem;
+	font-weight: 600;
+	color: #34495E;
+	text-decoration: underline;
+	margin-bottom: 1rem;
+}
+.informacion p{
+	margin-bottom: .5rem;
+}
+.informacion ul{
+	padding-left: 1.5rem;
+	margin-bottom: .5rem;
+}
+footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2rem;
+	color: #FFF;
+	font-family: 'robotolight';
+	line-height: 2rem;
+	text-align: center;
+	background: #34495E;
+}
+
+@media screen and (max-width: 1080px) {
+	.card__nav{
+		flex-wrap: wrap;
+	}
+}
+@media screen and (max-width: 870px) {
+	.card__nav{
+		height: 2rem;
+		overflow: hidden;
+		flex-wrap: nowrap;
+		flex-direction: column;
+		text-align: center;
+		border-radius: 8px;
+		padding: 0 2rem;
+		transition: .5s;
+	}
+	.icon-resp{
+		width: 100%;
+		transition: .5s;
+		display: block;
+	}
+	.icon-resp i{
+		line-height: 2rem;
+	}
+}
+@media screen and (max-width: 440px){
+	.informacion h2{
+		font-size: 1.5rem;
+	}
+}
